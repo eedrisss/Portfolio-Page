@@ -1,0 +1,93 @@
+/* 
+Course: COMP224
+Name: Idris Mustapha
+Student no: 301207535
+10/04/2023 */
+/* Reset some default styles */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+  font-family:lucida console;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color:#00101b;
+  color: #333;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header {
+  background-color: #333;
+  color: #00101b;
+  padding: 5px ;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 150px 0;
+  color: #fff;
+}
+
+.change {
+	color:#ffc95e;
+	border:solid 2px #ffc95e;
+	padding:5px 10px;
+	transition:0.3s;
+	font-family:lucida console;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.link {
+  text-decoration: underline;
+  color: #ffc95e;
+}
+
+.project-image {
+  max-width: 200px; 
+  height: auto; 
+}
+
+.project_li li {
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+  color: #ffc95e;
+}
+
+.photo {
+  width: 150px;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/contact.css">
+    <title>Contacts List</title>
+</head>
+<body>
+    <header>
+        <%- include('partials/top_navbar.ejs') %>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="contact-panel">
+
+                <h1>Contacts List</h1>
+                <!-- Display contacts from your database in a table -->
+                <table>
+                    <tr>
+                        <th>Contact Name</th>
+                        <th>Contact Number</th>
+                        <th>Email Address</th>
+                        <th>Actions</th>
+                    </tr>
+                    <!-- Loop through your contacts data and generate rows -->
+                    <!-- Loop through your users data and generate rows -->
+                    <% users.forEach(user => { %>
+                        <tr>
+                        <td><%= user.name %></td>
+                        <td><%= user.number %></td>
+                        <td><%= user.email %></td>
+                        <td>
+                            <a href="/update/<%= user._id %>">Update</a>
+                            <a href="/delete/<%= user._id %>" class="delete-link" onclick="return confirm('Are you sure you want to delete this entry?')">Delete</a>
+                        </td>
+                        </tr>
+                    <% }); %>
+  
+                </table>
+            <li><a href="/logout">Logout</a></li> 
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

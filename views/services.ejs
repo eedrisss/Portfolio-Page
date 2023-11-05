@@ -1,0 +1,38 @@
+<!-- /* 
+COMP224
+Idris Mustapha
+301207535
+10/04/2023 */ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/stylesheets/services.css">
+    <title><%= title %></title>
+</head>
+<body>
+    <header>
+        <%- include('partials/top_navbar') %>
+    </header>
+    
+
+
+    <section class="hero">
+        <div class="hero-content">
+        <h1><%= title %></h1>
+            <ul>
+                <% services.forEach(service => { %>
+                    <li>
+                        <h2><%= service.title %></h2>
+                        <p><%= service.description %></p>
+                    </li>
+                <% }); %>
+            </ul>
+        </div>
+    </section>
+    
+
+    <footer>
+        <%- include('partials/footer_navbar') %>
+    </footer>  
+</body>
+</html>
