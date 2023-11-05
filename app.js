@@ -20,7 +20,7 @@ const User = require('./models/User');
 //import "mongoose" - required for DB Access
 let mongoose = require('mongoose');
 // URI
-let DB = require('../Portfolio/config/database');
+let DB = require('./config/database');
 
 mongoose.connect(process.env.URI || DB.URI, {useNewUrlParser: true, useUnifiedTopology: true});
 
